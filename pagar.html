@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página de Pago</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Página de Pago</h1>
+  </header>
+
+  <main>
+    <section class="payment-form">
+      <h2>Detalles de Pago</h2>
+      <form action="procesar_pago.php" method="post">
+        <label for="nombre">Nombre en la Tarjeta:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="tarjeta">Número de Tarjeta:</label>
+        <input type="text" id="tarjeta" name="tarjeta" required>
+        
+        <label for="expiracion">Fecha de Expiración:</label>
+        <input type="text" id="expiracion" name="expiracion" placeholder="MM/AA" required>
+        
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required>
+        
+        <button type="submit">Pagar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Tu Tienda en Línea de Autos 100% electrico</p>
+    <a href="index.html" class="back-button">Volver a la Tienda</a>
+  </footer>
+</body>
+</html>
